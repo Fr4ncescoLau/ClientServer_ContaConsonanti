@@ -42,6 +42,10 @@ public class SimpleServer{
                     }
                 }
                 out.println(cont);
+                in.close();
+                out.close();
+                socket.close();
+                serverSocket.close();
             }
         }
     }
